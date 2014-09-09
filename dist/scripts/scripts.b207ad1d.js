@@ -1,1 +1,0 @@
-"use strict";angular.module("groupeerApp",["ngAnimate","ngResource"]),angular.module("groupeerApp").controller("MainCtrl",["$scope",function(a){a.awesomeThings=["HTML5 Boilerplate","AngularJS","Karma"]}]);
