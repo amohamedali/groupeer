@@ -16,7 +16,7 @@ var groupy = angular
     'ui.router'
   ]);
 
-groupy.controller('homeController', function($scope){
+groupy.controller('homeController', ["$scope", function($scope){
   // $scope.projects = [
   //   'Mido Design',
   //   'Koala Design',
@@ -24,9 +24,9 @@ groupy.controller('homeController', function($scope){
   //   'cooool stuff'
   // ];
   // $scope.selected = undefined;
-});
+}]);
 
-groupy.config(function($stateProvider, $urlRouterProvider) {
+groupy.config(["$stateProvider", "$urlRouterProvider", function($stateProvider, $urlRouterProvider) {
   $urlRouterProvider.otherwise('/');
 
   $stateProvider
@@ -43,4 +43,4 @@ groupy.config(function($stateProvider, $urlRouterProvider) {
       url: '/sign-up',
       templateUrl: 'views/sign-up.html'
     });
-});
+}]);
