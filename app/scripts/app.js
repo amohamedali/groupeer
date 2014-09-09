@@ -8,8 +8,39 @@
  *
  * Main module of the application.
  */
-angular
+
+var groupy = angular
   .module('groupeerApp', [
     'ngAnimate',
-    'ngResource'
+    'ngResource',
+    'ui.router'
   ]);
+
+groupy.controller('homeController', function($scope){
+  // $scope.projects = [
+  //   'Mido Design',
+  //   'Koala Design',
+  //   'Many other stuff',
+  //   'cooool stuff'
+  // ];
+  // $scope.selected = undefined;
+});
+
+groupy.config(function($stateProvider, $urlRouterProvider) {
+  $urlRouterProvider.otherwise('/');
+
+  $stateProvider
+    .state('home', {
+      url: '/',
+      templateUrl: 'views/home.html',
+      controller: 'homeController'
+    })
+    .state('sign-in', {
+      url: '/sign-in',
+      templateUrl: 'views/sign-in.html'
+    })
+    .state('sign-up', {
+      url: '/sign-up',
+      templateUrl: 'views/sign-up.html'
+    });
+});
