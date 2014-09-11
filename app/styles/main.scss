@@ -10,12 +10,6 @@ $icon-font-path: "../bower_components/bootstrap-sass-official/assets/fonts/boots
   padding: 0.2em 0;
 }
 
-/* Space out content a bit */
-body {
-  padding-top: 20px;
-  padding-bottom: 20px;
-}
-
 /* Everything but the jumbotron gets side spacing for mobile first views */
 .header,
 .marketing,
@@ -96,8 +90,65 @@ body {
   width: 100px;
   display: inline;
   padding: 10px;
+  cursor: pointer;
 }
 
 #brands_handler {
   padding: 20px;
+}
+
+.hover-sidebar {
+  width: 60px;
+  background-color: #599229;
+  position: fixed;
+  height: 100%;
+  margin: 0 auto;
+  transition: width 0.5s ease;
+  -webkit-transition: width 0.5s ease;
+  -moz-transition: width 0.5s ease;
+  -o-transition: width 0.5s ease;
+  -ms-transition: width 0.5s ease;
+}
+
+.hover-sidebar:hover {
+  width: 150px;
+}
+
+.hover-sidebar #menu-icon {
+  color: white;
+  font-size: 20px;
+  padding: 15px;
+}
+
+.hover-sidebar:hover #menu-icon {
+  display: none;
+}
+
+.hover-sidebar .sidebarContent {
+  visibility:hidden;
+  opacity:0;
+  transition:visibility 0s linear 0.5s,opacity 0.5s linear;
+  -webkit-transition:visibility 0s linear 0.5s,opacity 0.5s linear;
+  -moz-transition:visibility 0s linear 0.5s,opacity 0.5s linear;
+  -o-transition:visibility 0s linear 0.5s,opacity 0.5s linear;
+  -ms-transition:visibility 0s linear 0.5s,opacity 0.5s linear;
+  padding-top: 100%;
+  margin-left: 10px;
+}
+
+.hover-sidebar:hover .sidebarContent {
+  display: block;
+  visibility:visible;
+  opacity:1;
+  transition-delay:0s;
+  -webkit-transition-delay:0s;
+  -moz-transition-delay:0s;
+  -o-transition-delay:0s;
+  -ms-transition-delay:0s;
+}
+
+.groupeerLink {
+  font-size: 24px;
+  color: #599229;
+  text-decoration: none;
 }

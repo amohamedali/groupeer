@@ -12,6 +12,7 @@
     <!-- endbuild -->
     <!-- build:css(.tmp) styles/main.css -->
     <link rel="stylesheet" href="styles/main.css">
+    <link rel="stylesheet" href="styles/font-awesome.css">
     <!-- endbuild -->
   </head>
   <body ng-app="groupeerApp">
@@ -20,14 +21,15 @@
     <![endif]-->
 
     <!-- Add your site or application content here -->
+    <hover-sidebar></hover-sidebar>
     <div class="col-md-8 col-md-offset-2">
       <div class="header">
         <ul class="nav nav-pills pull-right">
-          <li class="active"><a ui-sref="home">Home</a></li>
+          <li><a ui-sref="home">Home</a></li>
           <li><a ui-sref="sign-in">Sign In</a></li>
           <li><a ui-sref="sign-up">Sign Up</a></li>
         </ul>
-        <h3 class="text-muted">Groupeer</h3>
+        <h3 class="text-muted">Group<em class="groupeerLink">ee</em>r</h3>
       </div>
 
       <ui-view> </ui-view>

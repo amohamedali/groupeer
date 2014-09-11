@@ -1,13 +1,11 @@
 <div class="container">
-  <div class="col-md-5 col-md-offset-1">
+  <div class="col-md-8 col-md-offset-2">
     <h3 class="text-muted"> What do you search ?</h3>
     <div class="input-group">
       <input type="text" placeholder="Search by keyword"
       class="form-control search-query"
       autofocus="true"
-      ng-model="selected"
-      typeahead="p for p in projects | filter:$viewValue | limitTo:10"
-      typeahead-min-length='1'>
+      ng-model="search.filterBy">
       <span class="input-group-addon"><i class="glyphicon glyphicon-search"></i></span>
     </div>
   </div>
@@ -15,12 +13,48 @@
 
 
 <div class="container" id="brands_handler">
-  <div class="col-md-10">
+  <div class="col-md-10 col-md-offset-2">
     <p class="text-muted"> Choose your fields </p>
     <div class="home_imgs">
-      <img src="images/kickstarter-logo.png" class="img-responsive img-rounded">
+      <img src="images/kickstarter-logo.png" class="img-responsive img-rounded" ng-click="categoryFilter('projects')">
       <img src="images/KKBB-logo.png" class="img-responsive img-rounded">
       <img src="images/Ulule-logo.png" class="img-responsive img-rounded">
     </div>
   </div>
+</div>
+
+<p class="text-muted" ng-show="search.filterBy.length > 0"> Your search Result </p>
+<p class="text-muted" ng-hide="search.filterBy.length > 0"> Recent </p>
+<div ng-repeat="project in projects | filter:search | limitTo: 10">
+  <table class="table">
+    <tbody>
+      <tr>
+        <td rowspan="2">
+          <iframe width="240" height="180" ng-src="{{trustSrc(project.videoPreview)}}" frameborder="0" scrolling="no" ng-show="project.videoPreview"> </iframe>
+          <img ng-src="{{trustSrc(project.imagePreview)}}" width="240" height="180" alt="Missing" ng-hide="project.videoPreview">
+        </td>
+        <td colspan="4">
+          <p class="projectName"> <em> {{project.name}} </em></p>
+          <p class="text-muted"> by {{project.creator}} </p>
+          <p class="text-muted"> {{project.description}} </p>
+        </td>
+      </tr>
+      <tr>
+        <td>
+          <p class="text-muted"> {{project.goal}} goal </p>
+        </td>
+        <td>
+          <p class="text-muted"> {{project.pledged}} pledged </p>
+        </td>
+        <td>
+          <p class="text-muted"> {{project.expire_in}} days to go </p>
+        </td>
+        <td>
+          <a ng-href="{{project.url}}" class="groupeerLink"> More Info </a>
+        </td>
+      </tr>
+      </tr>
+
+    </tbody>
+  </table>
 </div>
