@@ -1,0 +1,38 @@
+{
+  "projects": [
+    {
+      "creator": "Yui Jegnan",
+      "name": "Cube and Me",
+      "description": "Cube and Me is fusion of a dungeon crawler and pet simulator.",
+      "type": "project",
+      "goal": "15000",
+      "pledged": "2373",
+      "expire_in": "24",
+      "videoPreview": "https://www.kickstarter.com/projects/797210197/cube-and-me/widget/video.html",
+      "url": "https://www.kickstarter.com/projects/797210197/cube-and-me",
+      "filterBy": {
+        "creator": "Yui Jegnan",
+        "name": "Cube and Me",
+        "description": "Cube and Me is fusion of a dungeon crawler and pet simulator.",
+        "type": "project"
+      }
+    },
+    {
+      "creator": "Thomas Benedikt",
+      "name": "EXECUTOR: 13-Foot, 90,000-Piece Super Star Destroyer in Lego",
+      "description": "A titanic project to construct the most awesome spaceship in the Star Wars Universe (yes, this is art).",
+      "type": "project",
+      "goal": "15500",
+      "pledged": "877",
+      "expire_in": "22",
+      "videoPreview": "https://www.kickstarter.com/projects/1471327222/executor-13-foot-90000-piece-super-star-destroyer/widget/video.html",
+      "url": "https://www.kickstarter.com/projects/1471327222/executor-13-foot-90000-piece-super-star-destroyer",
+      "filterBy": {
+      "creator": "Thomas Benedikt",
+      "name": "EXECUTOR: 13-Foot, 90,000-Piece Super Star Destroyer in Lego",
+      "description": "A titanic project to construct the most awesome spaceship in the Star Wars Universe (yes, this is art).",
+      "type": "project"
+      }
+    }
+  ]
+}
