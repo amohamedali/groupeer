@@ -25,9 +25,9 @@
 
 <p class="text-muted" ng-show="search.filterBy.length > 0"> Your search Result </p>
 <p class="text-muted" ng-hide="search.filterBy.length > 0"> Recent </p>
-<div ng-repeat="project in projects | filter:search | limitTo: 10">
-  <table class="table">
-    <tbody>
+<table class="table">
+<tbody ng-repeat="project in projects | filter:search | limitTo: 10">
+
       <tr>
         <td rowspan="2">
           <iframe width="240" height="180" ng-src="{{trustSrc(project.videoPreview)}}" frameborder="0" scrolling="no" ng-show="project.videoPreview"> </iframe>
@@ -53,8 +53,6 @@
           <a ng-href="{{project.url}}" class="groupeerLink"> More Info </a>
         </td>
       </tr>
-      </tr>
 
     </tbody>
   </table>
-</div>

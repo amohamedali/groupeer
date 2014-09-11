@@ -28,10 +28,10 @@
       "videoPreview": "https://www.kickstarter.com/projects/1471327222/executor-13-foot-90000-piece-super-star-destroyer/widget/video.html",
       "url": "https://www.kickstarter.com/projects/1471327222/executor-13-foot-90000-piece-super-star-destroyer",
       "filterBy": {
-      "creator": "Thomas Benedikt",
-      "name": "EXECUTOR: 13-Foot, 90,000-Piece Super Star Destroyer in Lego",
-      "description": "A titanic project to construct the most awesome spaceship in the Star Wars Universe (yes, this is art).",
-      "type": "project"
+        "creator": "Thomas Benedikt",
+        "name": "EXECUTOR: 13-Foot, 90,000-Piece Super Star Destroyer in Lego",
+        "description": "A titanic project to construct the most awesome spaceship in the Star Wars Universe (yes, this is art).",
+        "type": "project"
       }
     }
   ]
