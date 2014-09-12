@@ -5,8 +5,8 @@
       "name": "Cube and Me",
       "description": "Cube and Me is fusion of a dungeon crawler and pet simulator.",
       "type": "project",
-      "goal": "15000",
-      "pledged": "2373",
+      "goal": "$15,000",
+      "pledged": "$2,373",
       "expire_in": "24",
       "videoPreview": "https://www.kickstarter.com/projects/797210197/cube-and-me/widget/video.html",
       "url": "https://www.kickstarter.com/projects/797210197/cube-and-me",
@@ -22,8 +22,8 @@
       "name": "EXECUTOR: 13-Foot, 90,000-Piece Super Star Destroyer in Lego",
       "description": "A titanic project to construct the most awesome spaceship in the Star Wars Universe (yes, this is art).",
       "type": "project",
-      "goal": "15500",
-      "pledged": "877",
+      "goal": "$15,500",
+      "pledged": "$877",
       "expire_in": "22",
       "videoPreview": "https://www.kickstarter.com/projects/1471327222/executor-13-foot-90000-piece-super-star-destroyer/widget/video.html",
       "url": "https://www.kickstarter.com/projects/1471327222/executor-13-foot-90000-piece-super-star-destroyer",
@@ -32,6 +32,23 @@
         "name": "EXECUTOR: 13-Foot, 90,000-Piece Super Star Destroyer in Lego",
         "description": "A titanic project to construct the most awesome spaceship in the Star Wars Universe (yes, this is art).",
         "type": "project"
+      }
+    },
+    {
+      "creator": "Neil Clarke",
+      "name": "Clarkesworld: Chinese Science Fiction Translation Project",
+      "description": "Clarkesworld magazine wants to translate and publish a Chinese science fiction story in each issue. Help us kick off our first year.",
+      "type": "project",
+      "goal": "$7,500",
+      "pledged": "$3,109",
+      "expire_in": "26",
+      "videoPreview": "https://www.kickstarter.com/projects/clarkesworld/clarkesworld-chinese-science-fiction-translation-p/widget/video.html",
+      "url": "https://www.kickstarter.com/projects/clarkesworld/clarkesworld-chinese-science-fiction-translation-p?play=video_pitch&ref=home_potd",
+      "filterBy": {
+      "creator": "Neil Clarke",
+      "name": "Clarkesworld: Chinese Science Fiction Translation Project",
+      "description": "Clarkesworld magazine wants to translate and publish a Chinese science fiction story in each issue. Help us kick off our first year.",
+      "type": "project"
       }
     }
   ]
